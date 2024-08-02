@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+}
+.left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 4.5rem;
+  margin-right: auto;
+}
+.left-con {
+  max-width: 40rem;
+}
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.image {
+  width: 100%;
+}
+.mid {
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+.opening {
+  font-size: 4.5rem;
+  letter-spacing: 2rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.we {
+  color: #bc9496;
+  font-weight: 300;
+}
+.lower {
+  font-size: 1.2rem;
+  color: #bc9496;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  max-width: 37.5rem;
+  height: 3.5rem;
+  border-radius: 50px;
+  border: 1px solid #eadddf;
+  padding-left: 1rem;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+}
+.email {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  border: none;
+}
+.email:focus{
+  border: none;
+}
+.email::placeholder {
+  color: #eadddf;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 100%;
+  width: 5.5rem;
+  border: none;
+  background: linear-gradient(to left, #f49694 0%, #f8acae 50%, #f7b6b8 100%);
+  border-radius: inherit;
+  color: white;
+}
+.width {
+  width: 6.75rem;
+}
+.warning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6px;
+  position: relative;
+
+  padding-right: 1rem;
+}
+.problem {
+  color: red;
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 13px;
+  padding-left: 5%;
+}
+.flex-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.error {
+  width: 24px;
+  height: 24px;
+  flex-grow: 0;
+}
+.open {
+  position: relative;
+  left: 2rem;
+}
+.container-2 {
+  display: none;
+}
+.hidden{
+  visibility:hidden;
+}
+input[type="email"]:focus {
+  outline: none;
+}
+@media screen and (max-width: 1070px) {
+  .container {
+    flex-direction:column-reverse;
+    height: auto;
+    padding-bottom: 7rem;
+  }
+  .logo{
+    display: block;
+    padding: 2.5rem 2.5rem;
+  }
+  .right{
+    width: 100%;
+  }
+  .left{
+    width: 100%;
+    margin-top: 0;
+  }
+  .mid{
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .lower{
+    width: 85%;
+    margin: auto;
+  }
+  .opening{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .form-con {
+    margin: auto;
+    width: 80%;
+  }
+  .form {
+    max-width: 40rem;
+  }
+}
