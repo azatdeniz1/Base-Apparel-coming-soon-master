@@ -5,6 +5,8 @@
 }
 body {
   height: 100vh;
+  /*background: url(images/bg-pattern-desktop.svg);
+*/
 }
 .container {
   display: flex;
@@ -19,6 +21,10 @@ body {
   align-items: center;
   margin-top: 4.5rem;
   margin-right: auto;
+}
+.logo {
+  position: relative;
+  left: 0;
 }
 .left-con {
   max-width: 40rem;
@@ -72,7 +78,7 @@ body {
   width: 100%;
   border: none;
 }
-.email:focus{
+.email:focus {
   border: none;
 }
 .email::placeholder {
@@ -132,39 +138,43 @@ body {
 .container-2 {
   display: none;
 }
-.hidden{
-  visibility:hidden;
+.hidden {
+  visibility: hidden;
 }
 input[type="email"]:focus {
   outline: none;
-  background-color:white;
+  background-color: white;
 }
 @media screen and (max-width: 1070px) {
   .container {
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
     height: auto;
     padding-bottom: 7rem;
   }
-  .logo{
+  .logo {
     display: block;
     padding: 2.5rem 2.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
-  .right{
+  .right {
     width: 100%;
+    padding-top: 7rem;
   }
-  .left{
+  .left {
     width: 100%;
     margin-top: 0;
   }
-  .mid{
+  .mid {
     margin-top: 5rem;
     margin-bottom: 1.5rem;
   }
-  .lower{
+  .lower {
     width: 85%;
     margin: auto;
   }
-  .opening{
+  .opening {
     text-align: center;
     font-size: 3rem;
   }
