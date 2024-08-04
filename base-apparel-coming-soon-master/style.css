@@ -5,8 +5,7 @@
 }
 body {
   height: 100vh;
-  /*background: url(images/bg-pattern-desktop.svg);
-*/
+  background: url(images/bg-pattern-desktop.svg);
 }
 .container {
   display: flex;
